@@ -81,12 +81,7 @@ function GradeFormInner({ onLogout }: { onLogout: () => void }) {
           </p>
         )}
 
-        <p className="mt-5 text-center text-sm text-slate-400">
-          Having trouble?{" "}
-          <a href={REGISTRAR_LINK} className="font-medium text-blue-600 hover:underline">
-            Contact Student Registrar
-          </a>
-        </p>
+    
       </form>
       )}
 
