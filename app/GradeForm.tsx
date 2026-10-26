@@ -47,7 +47,7 @@ function GradeFormInner({ onLogout }: { onLogout: () => void }) {
           <label htmlFor="studentId" className="text-lg font-semibold">
             Student ID
           </label>
-          <span className="text-sm text-slate-400">Format: xx-xxxx-xx</span>
+          <span className="text-sm text-slate-400">Format: YYYY-XXXX</span>
         </div>
 
         <div className="relative">
@@ -58,7 +58,7 @@ function GradeFormInner({ onLogout }: { onLogout: () => void }) {
             onChange={(e) => setId(e.target.value)}
             autoComplete="off"
             inputMode="text"
-            placeholder="xx-xxxx-xx"
+            placeholder="2021-0001"
             className="w-full rounded-2xl border border-slate-300 px-4 py-4 pr-12 text-lg tracking-wide outline-none transition focus:border-blue-500 focus:ring-4 focus:ring-blue-100"
           />
           {validFormat && (
@@ -81,7 +81,12 @@ function GradeFormInner({ onLogout }: { onLogout: () => void }) {
           </p>
         )}
 
-       
+        <p className="mt-5 text-center text-sm text-slate-400">
+          Having trouble?{" "}
+          <a href={REGISTRAR_LINK} className="font-medium text-blue-600 hover:underline">
+            Contact Student Registrar
+          </a>
+        </p>
       </form>
       )}
 
